@@ -1,0 +1,33 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    margin:0;
+}
+
+nav{
+    background-color: #6366F1;
+    padding:5px;
+}
+nav ul{
+    list-style-type:none;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+}
+#landing{
+    background-image:url(https://images.unsplash.com/photo-1570560258879-af7f8e1447ac?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fHJlc3RhdXJhbnRzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60);
+    background-repeat:no-repeat;
+    background-size:cover;
+    color:white;
+    opacity:0.9;
+    padding:20px;
+}
+#menu{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+}
+.menu-item{
+    border:5px black solid;
+    margin:6px;
+    padding:6px;
+}
