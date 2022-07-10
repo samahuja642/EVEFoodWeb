@@ -1,8 +1,9 @@
 <!DOCTYPE HTML>
 <html>
+  <!-- This Section is provided to browser that how to render the webiste in the browser -->
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>EVEFood</title>
     
@@ -42,21 +43,27 @@
 	<h2>Burger</h2>
 	<img src="https://images.unsplash.com/photo-1550547660-d9450f859349?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YnVyZ2VyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60">
 	<h3>Rs 50</h3>
-	<button id="item1" class="btn-primary" onClick="addItem(this.id)">Add to Basket</button>
+	<button id="item1" class="btn-primary" onClick="removeItem(this.id)">-</button>
+	<span id="BurgerNumber"></span>
+	<button id="item1" class="btn-primary" onClick="addItem(this.id)">+</button>
       </div>
       
       <div class="menu-item">
 	<h2>Pao Bhaji</h2>
 	<img src="https://images.unsplash.com/photo-1606491956391-70868b5d0f47?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fHBhbyUyMGJoYWppfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60">
 	<h3>Rs 120</h3>
-	<button id="item2" class="btn-primary" onClick="addItem(this.id)">Add to Basket</button>
+	<button id="item2" class="btn-primary" onClick="removeItem(this.id)">-</button>
+	<span id="Pao BhajiNumber"></span>	
+	<button id="item2" class="btn-primary" onClick="addItem(this.id)">+</button>
       </div>
       
       <div class="menu-item">
 	<h2>Omlet</h2>
 	<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTT5SrW4bEFfmPsKFgc3z58HpSxUv_DdTrWDg&usqp=CAU">
 	<h3>Rs 60</h3>
-	<button id="item3" class="btn-primary" onClick="addItem(this.id)">Add to Basket</button>
+	<button id="item3" class="btn-primary" onClick="removeItem(this.id)">-</button>
+	<span id="OmletNumber"></span>	
+	<button id="item3" class="btn-primary" onClick="addItem(this.id)">+</button>
       </div>      
     </div>
     <div id="checkout">
@@ -71,8 +78,6 @@
       </table>
       
     </div>
-    
-    
     <script src="script.js"></script>  
   </body>
 </html>
