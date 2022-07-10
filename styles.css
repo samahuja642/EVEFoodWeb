@@ -8,18 +8,29 @@ nav{
     padding:5px;
 }
 nav ul{
+    font-size:2em;
     list-style-type:none;
     display:flex;
     flex-direction:row;
     justify-content:space-around;
 }
-#landing{
-    background-image:url(https://images.unsplash.com/photo-1570560258879-af7f8e1447ac?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fHJlc3RhdXJhbnRzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60);
-    background-repeat:no-repeat;
-    background-size:cover;
+nav ul li a{
     color:white;
-    opacity:0.9;
+}
+#landing{
+    background-image:url(https://images.unsplash.com/photo-1553527922-767df645c5f6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzN8fHJlc3RhdXJhbnRzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60);
+    background-repeat:no-repeat;
+    background-size: 100% 100%;
+    color:silver;   
+    height:90vh;
     padding:20px;
+}
+#landing h1{
+    font-size:8.5em;
+}
+#landing p,#landing a{
+    font-size:3.5em;
+    color:silver;
 }
 #menu{
     display:flex;
@@ -31,3 +42,19 @@ nav ul{
     margin:6px;
     padding:6px;
 }
+.btn-primary{
+    margin:5px;
+    background-color:yellow;
+    padding:6px;
+    border:black solid 3px;
+    border-radius:15px;
+    font-size:125%;
+}
+.menu-item img{
+    width:200px;
+    height:200px;
+}
+
+
+
+

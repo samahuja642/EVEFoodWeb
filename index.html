@@ -18,9 +18,15 @@
   <body>
     <nav>
       <ul>
-	<li>EVEFood</li>
-	<li>Menu</li>
-	<li>Checkout</li>
+	<li>
+	  <a href="#landing">EVEFood</a>
+	</li>
+	<li>
+	  <a href="#menu">Menu</a>
+	</li>
+	<li>
+	  <a href="#checkout">Checkout</a>
+	</li>
       </ul>
       
     </nav>
@@ -28,31 +34,44 @@
     <div id="landing">
       <h1>EVEFood</h1>
       <p>Enjoy Your Meals with EVEFood.Happy to See You Back.</p>
-      <a>See The Menu</a>
+      <a href="#menu">See The Menu</a>
     </div>
 
     <div id="menu">
       <div class="menu-item">
 	<h2>Burger</h2>
+	<img src="https://images.unsplash.com/photo-1550547660-d9450f859349?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YnVyZ2VyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60">
 	<h3>Rs 50</h3>
-	<button id="item1" onClick="addItem(this.id)">Add to Basket</button>
+	<button id="item1" class="btn-primary" onClick="addItem(this.id)">Add to Basket</button>
       </div>
       
       <div class="menu-item">
 	<h2>Pao Bhaji</h2>
+	<img src="https://images.unsplash.com/photo-1606491956391-70868b5d0f47?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fHBhbyUyMGJoYWppfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60">
 	<h3>Rs 120</h3>
-	<button id="item2" onClick="addItem(this.id)">Add to Basket</button>
+	<button id="item2" class="btn-primary" onClick="addItem(this.id)">Add to Basket</button>
       </div>
       
       <div class="menu-item">
 	<h2>Omlet</h2>
+	<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTT5SrW4bEFfmPsKFgc3z58HpSxUv_DdTrWDg&usqp=CAU">
 	<h3>Rs 60</h3>
-	<button id="item3" onClick="addItem(this.id)">Add to Basket</button>
+	<button id="item3" class="btn-primary" onClick="addItem(this.id)">Add to Basket</button>
       </div>      
     </div>
 
-    <div class="checkout">
-      <h2>Total Amount : Rs <span id="total"></span></h2> 
+    <div id="checkout">
+      <h2>Total Amount : Rs <span id="total"></span></h2>
+      <button id="buy" class="btn-primary" onClick="checkOut()">Checkout Basket</button>
+      <table>
+	<tr>
+	  <th>Dish</th>
+	  <th>Quantity</th>
+	  <th>Price</th>
+	</tr>
+	
+      </table>
+      
     </div>
     
     
